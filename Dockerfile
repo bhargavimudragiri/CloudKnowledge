@@ -8,5 +8,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/downloads/page247/k
 WORKDIR /var/www/html/
 RUN unzip kindle.zip
 RUN cp -rvf markups-kindle kindle.zip
-CMD ["/usr/sbin/httpd", "-D","FOREGROUND"]
+CMD ["/usr/sbin", "-D","FOREGROUND"]
 EXPOSE 80
